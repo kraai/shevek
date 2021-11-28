@@ -28,6 +28,7 @@ struct ContentView: View {
                 }
                 .onDelete(perform: deleteItems)
             }
+            .navigationTitle("Inbox")
             .toolbar {
                 ToolbarItem {
                     Button(action: addItem) {
@@ -37,6 +38,7 @@ struct ContentView: View {
             }
             Text("Select an item")
         }
+        .navigationViewStyle(.stack)
     }
 
     private func addItem() {
