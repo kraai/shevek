@@ -27,7 +27,7 @@ struct ContentView: View {
             List {
                 ForEach(items) { item in
                     HStack {
-                        Text(item.title!)
+                        Text(try! AttributedString(markdown: item.title!, options: .init(interpretedSyntax: .inlineOnlyPreservingWhitespace)))
                         Spacer()
                         Button {
                             self.item = item
