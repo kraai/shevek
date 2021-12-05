@@ -1,0 +1,20 @@
+# Copyright 2021 Matthew James Kraai
+#
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+name: upload-screenshots
+on:
+  push:
+    branches:
+      - screenshots
+jobs:
+  upload-screenshots:
+    runs-on: macOS-11
+    steps:
+      - run: xcrun simctl create 'iPhone SE (1st generation)' 'iPhone SE (1st generation)'
+      - run: xcrun simctl create 'iPad Pro (12.9-inch) (2nd generation)' 'iPad Pro (12.9-inch) (2nd generation)'
+      - uses: actions/checkout@v2
+      - run: bundle install
+      - run: bundle exec fastlane screenshots
+        env:
+          APP_STORE_CONNECT_API_KEY: ${{ secrets.APP_STORE_CONNECT_API_KEY }}

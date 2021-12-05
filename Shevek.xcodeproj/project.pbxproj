@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A85A482A27568FE200571431 /* ShevekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85A482927568FE200571431 /* ShevekUITests.swift */; };
+		A85A48332756DAF400571431 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85A48322756DAF400571431 /* SnapshotHelper.swift */; };
 		A8E785872753A4A70065358D /* ShevekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E785862753A4A70065358D /* ShevekApp.swift */; };
 		A8E785892753A4A70065358D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E785882753A4A70065358D /* ContentView.swift */; };
 		A8E7858B2753A4A80065358D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8E7858A2753A4A80065358D /* Assets.xcassets */; };
@@ -17,7 +19,20 @@
 		A8E7859E2753B0030065358D /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7859D2753B0030065358D /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A85A482D27568FE200571431 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8E7857B2753A4A70065358D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8E785822753A4A70065358D;
+			remoteInfo = Shevek;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A85A482727568FE200571431 /* ShevekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShevekUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A85A482927568FE200571431 /* ShevekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShevekUITests.swift; sourceTree = "<group>"; };
+		A85A48322756DAF400571431 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		A8E785832753A4A70065358D /* Shevek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shevek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E785862753A4A70065358D /* ShevekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShevekApp.swift; sourceTree = "<group>"; };
 		A8E785882753A4A70065358D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,6 +45,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A85A482427568FE200571431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8E785802753A4A70065358D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -40,10 +62,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A85A482827568FE200571431 /* ShevekUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A85A48322756DAF400571431 /* SnapshotHelper.swift */,
+				A85A482927568FE200571431 /* ShevekUITests.swift */,
+			);
+			path = ShevekUITests;
+			sourceTree = "<group>";
+		};
 		A8E7857A2753A4A70065358D = {
 			isa = PBXGroup;
 			children = (
 				A8E785852753A4A70065358D /* Shevek */,
+				A85A482827568FE200571431 /* ShevekUITests */,
 				A8E785842753A4A70065358D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				A8E785832753A4A70065358D /* Shevek.app */,
+				A85A482727568FE200571431 /* ShevekUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +115,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A85A482627568FE200571431 /* ShevekUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A85A483127568FE200571431 /* Build configuration list for PBXNativeTarget "ShevekUITests" */;
+			buildPhases = (
+				A85A482327568FE200571431 /* Sources */,
+				A85A482427568FE200571431 /* Frameworks */,
+				A85A482527568FE200571431 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A85A482E27568FE200571431 /* PBXTargetDependency */,
+			);
+			name = ShevekUITests;
+			productName = ShevekUITests;
+			productReference = A85A482727568FE200571431 /* ShevekUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		A8E785822753A4A70065358D /* Shevek */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8E785962753A4A80065358D /* Build configuration list for PBXNativeTarget "Shevek" */;
@@ -109,6 +160,10 @@
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
+					A85A482627568FE200571431 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = A8E785822753A4A70065358D;
+					};
 					A8E785822753A4A70065358D = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -128,11 +183,19 @@
 			projectRoot = "";
 			targets = (
 				A8E785822753A4A70065358D /* Shevek */,
+				A85A482627568FE200571431 /* ShevekUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A85A482527568FE200571431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8E785812753A4A70065358D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,6 +208,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A85A482327568FE200571431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A85A482A27568FE200571431 /* ShevekUITests.swift in Sources */,
+				A85A48332756DAF400571431 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8E7857F2753A4A70065358D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,7 +232,59 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A85A482E27568FE200571431 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8E785822753A4A70065358D /* Shevek */;
+			targetProxy = A85A482D27568FE200571431 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		A85A482F27568FE200571431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C9YD3XMB57;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ftbfs.ShevekUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Shevek;
+			};
+			name = Debug;
+		};
+		A85A483027568FE200571431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C9YD3XMB57;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ftbfs.ShevekUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Shevek;
+			};
+			name = Release;
+		};
 		A8E785942753A4A80065358D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -338,6 +462,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A85A483127568FE200571431 /* Build configuration list for PBXNativeTarget "ShevekUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A85A482F27568FE200571431 /* Debug */,
+				A85A483027568FE200571431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A8E7857E2753A4A70065358D /* Build configuration list for PBXProject "Shevek" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

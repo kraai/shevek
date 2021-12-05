@@ -21,4 +21,10 @@ struct ShevekApp: App {
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
+
+    init() {
+        if ProcessInfo().arguments.contains("-FASTLANE_SNAPSHOT") {
+            UIView.setAnimationsEnabled(false)
+        }
+    }
 }
