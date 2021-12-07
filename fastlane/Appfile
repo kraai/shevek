@@ -2,9 +2,7 @@
 #
 # This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-.DS_Store
-/Shevek.app.dSYM.zip
-/Shevek.ipa
-/fastlane/README.md
-/fastlane/report.xml
-xcuserdata/
+app_identifier("org.ftbfs.Shevek")
+apple_id("kraai@ftbfs.org")
+itc_team_id("123799004")
+team_id("C9YD3XMB57")

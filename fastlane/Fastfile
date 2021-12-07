@@ -2,9 +2,10 @@
 #
 # This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-.DS_Store
-/Shevek.app.dSYM.zip
-/Shevek.ipa
-/fastlane/README.md
-/fastlane/report.xml
-xcuserdata/
+platform :ios do
+  lane :build do
+    setup_ci
+    match(git_basic_authorization: ENV['MATCH_GIT_BASIC_AUTHORIZATION'], readonly: true, type: 'appstore')
+    build_app
+  end
+end
