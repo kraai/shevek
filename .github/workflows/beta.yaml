@@ -2,15 +2,16 @@
 #
 # This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-name: build
+name: beta
 on: push
 jobs:
-  build:
+  beta:
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v2
       - run: bundle install
-      - run: bundle exec fastlane ios build
+      - run: bundle exec fastlane ios beta
         env:
+          APP_STORE_CONNECT_API_KEY_KEY: ${{ secrets.APP_STORE_CONNECT_API_KEY }}
           MATCH_GIT_BASIC_AUTHORIZATION: ${{ secrets.MATCH_GIT_BASIC_AUTHORIZATION }}
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
