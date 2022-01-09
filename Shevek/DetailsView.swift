@@ -19,7 +19,7 @@ struct DetailsView: View {
 
     var body: some View {
         NavigationView {
-            List {
+            Form {
                 TextField("Title", text: $title)
                     .focused($titleFieldIsFocused)
                     .onAppear {
