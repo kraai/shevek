@@ -23,44 +23,50 @@ struct ContentView: View {
     @State private var item: Item?
 
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    HStack {
-                        Text(try! AttributedString(markdown: item.title!, options: .init(interpretedSyntax: .inlineOnlyPreservingWhitespace)))
-                        Spacer()
+        TabView {
+            NavigationView {
+                List {
+                    ForEach(items) { item in
+                        HStack {
+                            Text(try! AttributedString(markdown: item.title!, options: .init(interpretedSyntax: .inlineOnlyPreservingWhitespace)))
+                            Spacer()
+                            Button {
+                                self.item = item
+                            } label: {
+                                Image(systemName: "info.circle")
+                                    .foregroundColor(.accentColor)
+                            }
+                        }
+                    }
+                    .onDelete(perform: deleteItems)
+                }
+                .navigationTitle("Inbox")
+                .toolbar {
+                    ToolbarItem {
                         Button {
-                            self.item = item
+                            isShowingAddSheet = true
                         } label: {
-                            Image(systemName: "info.circle")
-                                .foregroundColor(.accentColor)
+                            Label("Add Item", systemImage: "plus")
                         }
                     }
                 }
-                .onDelete(perform: deleteItems)
+                Text("Select an item")
             }
-            .navigationTitle("Inbox")
-            .toolbar {
-                ToolbarItem {
-                    Button {
-                        isShowingAddSheet = true
-                    } label: {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
+            .navigationViewStyle(.stack)
+            .sheet(isPresented: $isShowingAddSheet) {
+                isShowingAddSheet = false
+            } content: {
+                AddView(isPresented: $isShowingAddSheet)
             }
-            Text("Select an item")
-        }
-        .navigationViewStyle(.stack)
-        .sheet(isPresented: $isShowingAddSheet) {
-            isShowingAddSheet = false
-        } content: {
-            AddView(isPresented: $isShowingAddSheet)
-        }
-        .sheet(item: $item) {
-            item = nil
-        } content: { item in
-            DetailsView(item: $item, title: item.title!)
+            .sheet(item: $item) {
+                item = nil
+            } content: { item in
+                DetailsView(item: $item, title: item.title!)
+            }
+            .tabItem {
+                Image(systemName: "tray.fill")
+                Text("Inbox")
+            }
         }
     }
 
