@@ -1,5 +1,5 @@
 //
-//  Copyright 2021 Matthew James Kraai
+//  Copyright 2021, 2022 Matthew James Kraai
 //
 //  This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //
@@ -14,7 +14,6 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.title, ascending: true)],
         animation: .default)
