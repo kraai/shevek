@@ -22,6 +22,11 @@ struct ContentView: View {
                     Image(systemName: "tray.fill")
                     Text("Inbox")
                 }
+            ProjectsView()
+                .tabItem {
+                    Image(systemName: "star.fill")
+                    Text("Projects")
+                }
         }
     }
 }

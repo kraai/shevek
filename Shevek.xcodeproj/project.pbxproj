@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A8210C8A2793B20800DBBC70 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8210C892793B20800DBBC70 /* InboxView.swift */; };
+		A8CE1BD42793D5F500B7C0D0 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CE1BD32793D5F500B7C0D0 /* ProjectsView.swift */; };
+		A8CE1BD6279442E700B7C0D0 /* AddProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CE1BD5279442E700B7C0D0 /* AddProjectView.swift */; };
+		A8CE1BD8279442F200B7C0D0 /* ProjectDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CE1BD7279442F200B7C0D0 /* ProjectDetailsView.swift */; };
 		A8E785872753A4A70065358D /* ShevekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E785862753A4A70065358D /* ShevekApp.swift */; };
 		A8E785892753A4A70065358D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E785882753A4A70065358D /* ContentView.swift */; };
 		A8E7858B2753A4A80065358D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8E7858A2753A4A80065358D /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 
 /* Begin PBXFileReference section */
 		A8210C892793B20800DBBC70 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		A8CE1BD32793D5F500B7C0D0 /* ProjectsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		A8CE1BD5279442E700B7C0D0 /* AddProjectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProjectView.swift; sourceTree = "<group>"; };
+		A8CE1BD7279442F200B7C0D0 /* ProjectDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetailsView.swift; sourceTree = "<group>"; };
 		A8E785832753A4A70065358D /* Shevek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shevek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E785862753A4A70065358D /* ShevekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShevekApp.swift; sourceTree = "<group>"; };
 		A8E785882753A4A70065358D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +72,9 @@
 				A8210C892793B20800DBBC70 /* InboxView.swift */,
 				A8E7859B2753AFE00065358D /* AddItemView.swift */,
 				A8E7859D2753B0030065358D /* ItemDetailsView.swift */,
+				A8CE1BD32793D5F500B7C0D0 /* ProjectsView.swift */,
+				A8CE1BD5279442E700B7C0D0 /* AddProjectView.swift */,
+				A8CE1BD7279442F200B7C0D0 /* ProjectDetailsView.swift */,
 				A8E7858A2753A4A80065358D /* Assets.xcassets */,
 				A8E7858F2753A4A80065358D /* Persistence.swift */,
 				A8E785912753A4A80065358D /* Shevek.xcdatamodeld */,
@@ -154,11 +163,14 @@
 			files = (
 				A8E785902753A4A80065358D /* Persistence.swift in Sources */,
 				A8E785932753A4A80065358D /* Shevek.xcdatamodeld in Sources */,
+				A8CE1BD42793D5F500B7C0D0 /* ProjectsView.swift in Sources */,
+				A8CE1BD6279442E700B7C0D0 /* AddProjectView.swift in Sources */,
 				A8E7859C2753AFE00065358D /* AddItemView.swift in Sources */,
 				A8210C8A2793B20800DBBC70 /* InboxView.swift in Sources */,
 				A8E785892753A4A70065358D /* ContentView.swift in Sources */,
 				A8E785872753A4A70065358D /* ShevekApp.swift in Sources */,
 				A8E7859E2753B0030065358D /* ItemDetailsView.swift in Sources */,
+				A8CE1BD8279442F200B7C0D0 /* ProjectDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
