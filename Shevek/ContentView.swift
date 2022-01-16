@@ -14,73 +14,14 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.title, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
-    @State private var isShowingAddSheet = false
-    @State private var item: Item?
 
     var body: some View {
         TabView {
-            NavigationView {
-                List {
-                    ForEach(items) { item in
-                        HStack {
-                            Text(try! AttributedString(markdown: item.title!, options: .init(interpretedSyntax: .inlineOnlyPreservingWhitespace)))
-                            Spacer()
-                            Button {
-                                self.item = item
-                            } label: {
-                                Image(systemName: "info.circle")
-                                    .foregroundColor(.accentColor)
-                            }
-                        }
-                    }
-                    .onDelete(perform: deleteItems)
+            InboxView()
+                .tabItem {
+                    Image(systemName: "tray.fill")
+                    Text("Inbox")
                 }
-                .navigationTitle("Inbox")
-                .toolbar {
-                    ToolbarItem {
-                        Button {
-                            isShowingAddSheet = true
-                        } label: {
-                            Label("Add Item", systemImage: "plus")
-                        }
-                    }
-                }
-                Text("Select an item")
-            }
-            .navigationViewStyle(.stack)
-            .sheet(isPresented: $isShowingAddSheet) {
-                isShowingAddSheet = false
-            } content: {
-                AddView(isPresented: $isShowingAddSheet)
-            }
-            .sheet(item: $item) {
-                item = nil
-            } content: { item in
-                DetailsView(item: $item, title: item.title!)
-            }
-            .tabItem {
-                Image(systemName: "tray.fill")
-                Text("Inbox")
-            }
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
         }
     }
 }
