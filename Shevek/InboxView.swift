@@ -54,7 +54,7 @@ struct InboxView: View {
         .sheet(isPresented: $isShowingAddSheet) {
             isShowingAddSheet = false
         } content: {
-            AddView(isPresented: $isShowingAddSheet)
+            AddItemView(isPresented: $isShowingAddSheet)
         }
         .sheet(item: $item) {
             item = nil

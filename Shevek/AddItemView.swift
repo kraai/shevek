@@ -1,9 +1,9 @@
 //
-//  Copyright 2021 Matthew James Kraai
+//  Copyright 2021, 2022 Matthew James Kraai
 //
 //  This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //
-//  AddView.swift
+//  AddItemView.swift
 //  Shevek
 //
 //  Created by Matthew James Kraai on 11/28/21.
@@ -11,7 +11,7 @@
 
 import SwiftUI
 
-struct AddView: View {
+struct AddItemView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @Binding var isPresented: Bool
     @State private var title = ""
@@ -62,10 +62,10 @@ struct AddView: View {
     }
 }
 
-struct AddView_Previews: PreviewProvider {
+struct AddItemView_Previews: PreviewProvider {
     @State static private var isPresented = true
 
     static var previews: some View {
-        AddView(isPresented: $isPresented)
+        AddItemView(isPresented: $isPresented)
     }
 }

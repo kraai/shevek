@@ -14,7 +14,7 @@
 		A8E7858E2753A4A80065358D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8E7858D2753A4A80065358D /* Preview Assets.xcassets */; };
 		A8E785902753A4A80065358D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7858F2753A4A80065358D /* Persistence.swift */; };
 		A8E785932753A4A80065358D /* Shevek.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8E785912753A4A80065358D /* Shevek.xcdatamodeld */; };
-		A8E7859C2753AFE00065358D /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7859B2753AFE00065358D /* AddView.swift */; };
+		A8E7859C2753AFE00065358D /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7859B2753AFE00065358D /* AddItemView.swift */; };
 		A8E7859E2753B0030065358D /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7859D2753B0030065358D /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,7 @@
 		A8E7858D2753A4A80065358D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8E7858F2753A4A80065358D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		A8E785922753A4A80065358D /* Shevek.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shevek.xcdatamodel; sourceTree = "<group>"; };
-		A8E7859B2753AFE00065358D /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		A8E7859B2753AFE00065358D /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 		A8E7859D2753B0030065358D /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +64,7 @@
 				A8E785862753A4A70065358D /* ShevekApp.swift */,
 				A8E785882753A4A70065358D /* ContentView.swift */,
 				A8210C892793B20800DBBC70 /* InboxView.swift */,
-				A8E7859B2753AFE00065358D /* AddView.swift */,
+				A8E7859B2753AFE00065358D /* AddItemView.swift */,
 				A8E7859D2753B0030065358D /* DetailsView.swift */,
 				A8E7858A2753A4A80065358D /* Assets.xcassets */,
 				A8E7858F2753A4A80065358D /* Persistence.swift */,
@@ -154,7 +154,7 @@
 			files = (
 				A8E785902753A4A80065358D /* Persistence.swift in Sources */,
 				A8E785932753A4A80065358D /* Shevek.xcdatamodeld in Sources */,
-				A8E7859C2753AFE00065358D /* AddView.swift in Sources */,
+				A8E7859C2753AFE00065358D /* AddItemView.swift in Sources */,
 				A8210C8A2793B20800DBBC70 /* InboxView.swift in Sources */,
 				A8E785892753A4A70065358D /* ContentView.swift in Sources */,
 				A8E785872753A4A70065358D /* ShevekApp.swift in Sources */,
