@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A8210C8A2793B20800DBBC70 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8210C892793B20800DBBC70 /* InboxView.swift */; };
+		A8289FF52794C1AB006F73F6 /* WaitingForsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8289FF42794C1AB006F73F6 /* WaitingForsView.swift */; };
+		A8289FF72794C229006F73F6 /* AddWaitingForView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8289FF62794C229006F73F6 /* AddWaitingForView.swift */; };
+		A8289FF92794C261006F73F6 /* WaitingForDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8289FF82794C261006F73F6 /* WaitingForDetailsView.swift */; };
 		A88A16892794579F006D4242 /* NextActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88A16882794579F006D4242 /* NextActionsView.swift */; };
 		A88A168B27945846006D4242 /* AddActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88A168A27945846006D4242 /* AddActionView.swift */; };
 		A88A168D27945887006D4242 /* ActionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88A168C27945887006D4242 /* ActionDetailsView.swift */; };
@@ -26,6 +29,9 @@
 
 /* Begin PBXFileReference section */
 		A8210C892793B20800DBBC70 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		A8289FF42794C1AB006F73F6 /* WaitingForsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingForsView.swift; sourceTree = "<group>"; };
+		A8289FF62794C229006F73F6 /* AddWaitingForView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWaitingForView.swift; sourceTree = "<group>"; };
+		A8289FF82794C261006F73F6 /* WaitingForDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingForDetailsView.swift; sourceTree = "<group>"; };
 		A88A16882794579F006D4242 /* NextActionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextActionsView.swift; sourceTree = "<group>"; };
 		A88A168A27945846006D4242 /* AddActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActionView.swift; sourceTree = "<group>"; };
 		A88A168C27945887006D4242 /* ActionDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionDetailsView.swift; sourceTree = "<group>"; };
@@ -54,6 +60,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A8289FF32794C189006F73F6 /* WaitingFors */ = {
+			isa = PBXGroup;
+			children = (
+				A8289FF42794C1AB006F73F6 /* WaitingForsView.swift */,
+				A8289FF62794C229006F73F6 /* AddWaitingForView.swift */,
+				A8289FF82794C261006F73F6 /* WaitingForDetailsView.swift */,
+			);
+			path = WaitingFors;
+			sourceTree = "<group>";
+		};
 		A88A167F27945403006D4242 /* Inbox */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +124,7 @@
 				A88A167F27945403006D4242 /* Inbox */,
 				A88A16802794541B006D4242 /* Projects */,
 				A88A168727945768006D4242 /* NextActions */,
+				A8289FF32794C189006F73F6 /* WaitingFors */,
 				A8E7858A2753A4A80065358D /* Assets.xcassets */,
 				A8E7858F2753A4A80065358D /* Persistence.swift */,
 				A8E785912753A4A80065358D /* Shevek.xcdatamodeld */,
@@ -195,16 +212,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				A88A168B27945846006D4242 /* AddActionView.swift in Sources */,
+				A8289FF92794C261006F73F6 /* WaitingForDetailsView.swift in Sources */,
 				A8E785902753A4A80065358D /* Persistence.swift in Sources */,
 				A8E785932753A4A80065358D /* Shevek.xcdatamodeld in Sources */,
 				A8CE1BD42793D5F500B7C0D0 /* ProjectsView.swift in Sources */,
 				A8CE1BD6279442E700B7C0D0 /* AddProjectView.swift in Sources */,
 				A8E7859C2753AFE00065358D /* AddItemView.swift in Sources */,
+				A8289FF52794C1AB006F73F6 /* WaitingForsView.swift in Sources */,
 				A8210C8A2793B20800DBBC70 /* InboxView.swift in Sources */,
 				A8E785892753A4A70065358D /* ContentView.swift in Sources */,
 				A88A168D27945887006D4242 /* ActionDetailsView.swift in Sources */,
 				A8E785872753A4A70065358D /* ShevekApp.swift in Sources */,
 				A8E7859E2753B0030065358D /* ItemDetailsView.swift in Sources */,
+				A8289FF72794C229006F73F6 /* AddWaitingForView.swift in Sources */,
 				A88A16892794579F006D4242 /* NextActionsView.swift in Sources */,
 				A8CE1BD8279442F200B7C0D0 /* ProjectDetailsView.swift in Sources */,
 			);

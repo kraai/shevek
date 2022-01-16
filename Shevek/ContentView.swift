@@ -32,6 +32,11 @@ struct ContentView: View {
                     Image(systemName: "checkmark.square.fill")
                     Text("Next Actions")
                 }
+            WaitingForsView()
+                .tabItem {
+                    Image(systemName: "clock.fill")
+                    Text("Waiting Fors")
+                }
         }
     }
 }
