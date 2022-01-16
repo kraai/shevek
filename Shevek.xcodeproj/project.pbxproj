@@ -48,6 +48,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A88A167F27945403006D4242 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				A8210C892793B20800DBBC70 /* InboxView.swift */,
+				A8E7859B2753AFE00065358D /* AddItemView.swift */,
+				A8E7859D2753B0030065358D /* ItemDetailsView.swift */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		A88A16802794541B006D4242 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				A8CE1BD32793D5F500B7C0D0 /* ProjectsView.swift */,
+				A8CE1BD5279442E700B7C0D0 /* AddProjectView.swift */,
+				A8CE1BD7279442F200B7C0D0 /* ProjectDetailsView.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
 		A8E7857A2753A4A70065358D = {
 			isa = PBXGroup;
 			children = (
@@ -69,12 +89,8 @@
 			children = (
 				A8E785862753A4A70065358D /* ShevekApp.swift */,
 				A8E785882753A4A70065358D /* ContentView.swift */,
-				A8210C892793B20800DBBC70 /* InboxView.swift */,
-				A8E7859B2753AFE00065358D /* AddItemView.swift */,
-				A8E7859D2753B0030065358D /* ItemDetailsView.swift */,
-				A8CE1BD32793D5F500B7C0D0 /* ProjectsView.swift */,
-				A8CE1BD5279442E700B7C0D0 /* AddProjectView.swift */,
-				A8CE1BD7279442F200B7C0D0 /* ProjectDetailsView.swift */,
+				A88A167F27945403006D4242 /* Inbox */,
+				A88A16802794541B006D4242 /* Projects */,
 				A8E7858A2753A4A80065358D /* Assets.xcassets */,
 				A8E7858F2753A4A80065358D /* Persistence.swift */,
 				A8E785912753A4A80065358D /* Shevek.xcdatamodeld */,
