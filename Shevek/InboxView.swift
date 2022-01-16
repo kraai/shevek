@@ -59,7 +59,7 @@ struct InboxView: View {
         .sheet(item: $item) {
             item = nil
         } content: { item in
-            DetailsView(item: $item, title: item.title!)
+            ItemDetailsView(item: $item, title: item.title!)
         }
     }
 

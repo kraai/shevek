@@ -1,9 +1,9 @@
 //
-//  Copyright 2021 Matthew James Kraai
+//  Copyright 2021, 2022 Matthew James Kraai
 //
 //  This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //
-//  DetailsView.swift
+//  ItemDetailsView.swift
 //  Shevek
 //
 //  Created by Matthew James Kraai on 11/28/21.
@@ -11,7 +11,7 @@
 
 import SwiftUI
 
-struct DetailsView: View {
+struct ItemDetailsView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @Binding var item: Item?
     @State private var title: String
@@ -66,11 +66,11 @@ struct DetailsView: View {
     }
 }
 
-struct DetailsView_Previews: PreviewProvider {
+struct ItemDetailsView_Previews: PreviewProvider {
     @State static private var item: Item? = Item(context: PersistenceController(inMemory: true).container.viewContext)
 
     static var previews: some View {
         item!.title = "Item 0"
-        return DetailsView(item: $item, title: item!.title!)
+        return ItemDetailsView(item: $item, title: item!.title!)
     }
 }
