@@ -1,0 +1,19 @@
+# Copyright 2021, 2022 Matthew James Kraai
+#
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+clear_previous_screenshots(true)
+concurrent_simulators(false)
+devices([
+  "iPhone 13 Pro Max",
+  "iPhone 13 Pro",
+  "iPhone 8 Plus",
+  "iPhone SE (2nd generation)",
+  "iPhone SE (1st generation)",
+  "iPad Pro (12.9-inch) (4th generation)",
+  "iPad Pro (12.9-inch) (2nd generation)",
+  "iPad Pro (11-inch) (3rd generation)",
+  "iPad Air (3rd generation)",
+  "iPad Pro (9.7-inch)"
+])
+disable_slide_to_type(true)
